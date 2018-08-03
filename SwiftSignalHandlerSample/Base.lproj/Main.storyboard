@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSignalHandlerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2V5-fQ-nMe">
+                                <rect key="frame" x="169" y="318" width="37" height="30"/>
+                                <state key="normal" title="Array"/>
+                                <connections>
+                                    <action selector="tapButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XO-q4-xEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOQ-td-JHx">
+                                <rect key="frame" x="159" y="280" width="57" height="30"/>
+                                <state key="normal" title="NSArray"/>
+                                <connections>
+                                    <action selector="tapButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cc6-X9-oNb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkr-8y-yoy">
+                                <rect key="frame" x="24" y="366" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFz-5e-1iv">
+                                <rect key="frame" x="24" y="412" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-fi-h2Q">
+                                <rect key="frame" x="24" y="458" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2V5-fQ-nMe" firstAttribute="top" secondItem="LOQ-td-JHx" secondAttribute="bottom" constant="8" id="BcJ-mq-FoD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nkr-8y-yoy" secondAttribute="trailing" constant="24" id="Ef5-k5-mMA"/>
+                            <constraint firstItem="uFz-5e-1iv" firstAttribute="top" secondItem="Nkr-8y-yoy" secondAttribute="bottom" constant="25" id="I7I-fX-OZs"/>
+                            <constraint firstItem="Nkr-8y-yoy" firstAttribute="top" secondItem="2V5-fQ-nMe" secondAttribute="bottom" constant="18" id="Jfl-kO-CWO"/>
+                            <constraint firstItem="uFz-5e-1iv" firstAttribute="trailing" secondItem="Nkr-8y-yoy" secondAttribute="trailing" id="ZDR-9d-SkH"/>
+                            <constraint firstItem="LOQ-td-JHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frX-PQ-YJu"/>
+                            <constraint firstItem="2V5-fQ-nMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbw-Lz-Bby"/>
+                            <constraint firstItem="nDD-fi-h2Q" firstAttribute="trailing" secondItem="uFz-5e-1iv" secondAttribute="trailing" id="nlo-3h-77k"/>
+                            <constraint firstItem="Nkr-8y-yoy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qKM-8Z-cmB"/>
+                            <constraint firstItem="nDD-fi-h2Q" firstAttribute="top" secondItem="uFz-5e-1iv" secondAttribute="bottom" constant="25" id="qXB-CM-Zd7"/>
+                            <constraint firstItem="nDD-fi-h2Q" firstAttribute="leading" secondItem="uFz-5e-1iv" secondAttribute="leading" id="rZa-Ea-nQy"/>
+                            <constraint firstItem="2V5-fQ-nMe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tbe-22-0nB"/>
+                            <constraint firstItem="uFz-5e-1iv" firstAttribute="leading" secondItem="Nkr-8y-yoy" secondAttribute="leading" id="zEp-hv-w7c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="exceptionLabel" destination="Nkr-8y-yoy" id="gXO-j6-UXo"/>
+                        <outlet property="signalLabel1" destination="uFz-5e-1iv" id="Nqy-K7-sW7"/>
+                        <outlet property="signalLabel2" destination="nDD-fi-h2Q" id="wx0-bU-YHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
